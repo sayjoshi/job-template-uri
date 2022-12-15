@@ -1,0 +1,14 @@
+# https://vm251-81.gsslab.pnq2.redhat.com/api/v2/job_templates/50/
+---
+- name: uri
+  hosts: localhost
+  tasks:
+  
+  - name: Update Ansible Tower inventory
+    uri:
+      url: https://vm251-81.gsslab.pnq2.redhat.com/api/v2/job_templates/50/launch/
+      user: admin
+      password: linux
+      method: POST
+      body_format: json
+      force_basic_auth: yes
