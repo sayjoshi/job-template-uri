@@ -12,3 +12,9 @@
       method: POST
       body_format: json
       force_basic_auth: yes
+    body:
+      name: "sorting-job”
+      organization: 1
+      validate_certs: no
+      return_content: yes
+      status_code: 201
