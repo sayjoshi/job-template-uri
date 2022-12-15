@@ -9,12 +9,9 @@
       url: https://vm251-81.gsslab.pnq2.redhat.com/api/v2/job_templates/50/launch/
       user: admin
       password: linux
-      method: POST
+      method: GET
       body_format: json
       force_basic_auth: yes
-    body:
-      name: "sorting-job”
-      organization: 1
       validate_certs: no
       return_content: yes
       status_code: 201
