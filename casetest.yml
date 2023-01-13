@@ -8,5 +8,5 @@
       shell: |
         #  sed -i 'hostname , User , IpAddress' /tmp/playbook/sudousers_of_{{ inventory_hostname}}.csv
         echo "{{ ansible_hostname }},  {{ansible_default_ipv4.address}}, {{ item }}"  >> /tmp/playbook/sudousers_general.csv
-      #with_items: "{{ users.stdout_lines }}"
+      with_items: "{{ users.stdout_lines }}"
       delegate_to: localhost
